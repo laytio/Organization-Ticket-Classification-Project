@@ -1,131 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        color: #333333; /* Dark gray text */
+        background-color: #f8f8f8; /* Light gray background */
+    }
+    h1 {
+        color: #2c3e50; /* Dark blue */
+    }
+    h2 {
+        color: #2980b9; /* Bright blue */
+    }
+    ul {
+        color: #333333; /* Dark gray for lists */
+    }
+    li {
+        margin-bottom: 5px; /* Space between list items */
+    }
+</style>
+</head>
+<body>
+
 # Ticketing System Project Implementation Report
 
-
-
-
 ## Table of Contents
-  Installation of Required Libraries
-  Loading the Dataset
-  Data Exploration
-  Text Cleaning Function
-  Visual Analysis and Plotting
-  Bilingual Text Processing
-  Counting Missing Values Before and After Cleaning
-  Word Frequency Analysis
-  Feature Engineering
-  Dimensionality Reduction using PCA
-  Text Classification using Keywords
-  Training and Evaluating the Random Forest Model
-  Training the SVM Model
-  Visualizing PCA Results
-  Model Performance Summary
-  Conclusion and Future Work
-  References
+- [Installation of Required Libraries](#installation-of-required-libraries)
+- [Loading the Dataset](#loading-the-dataset)
+- [Data Exploration](#data-exploration)
+- [Text Cleaning Function](#text-cleaning-function)
+- [Visual Analysis and Plotting](#visual-analysis-and-plotting)
+- [Bilingual Text Processing](#bilingual-text-processing)
+- [Counting Missing Values Before and After Cleaning](#counting-missing-values-before-and-after-cleaning)
+- [Word Frequency Analysis](#word-frequency-analysis)
+- [Feature Engineering](#feature-engineering)
+- [Dimensionality Reduction using PCA](#dimensionality-reduction-using-pca)
+- [Text Classification using Keywords](#text-classification-using-keywords)
+- [Training and Evaluating the Random Forest Model](#training-and-evaluating-the-random-forest-model)
+- [Training the SVM Model](#training-the-svm-model)
+- [Visualizing PCA Results](#visualizing-pca-results)
+- [Model Performance Summary](#model-performance-summary)
+- [Conclusion and Future Work](#conclusion-and-future-work)
+- [References](#references)
 
-  
-# 1. Installation of Required Libraries
-## First, we need to install the necessary libraries for data handling, modeling, and visualization. These libraries include:
+## 1. Installation of Required Libraries
+- Install necessary libraries for data handling, modeling, and visualization:
+  - **pandas**
+  - **scikit-learn**
+  - **matplotlib**
+  - **seaborn**
+  - **nltk**
+  - **transformers**
+  - **torch**
+  - **arabic_reshaper**
+  - **wordcloud**
 
-  pandas: Used for data manipulation and analysis.
-  scikit-learn: Used for implementing machine learning algorithms.
-  matplotlib and seaborn: Used for graphical visualization.
-  nltk: A library for natural language processing.
-  transformers: Used for leveraging pre-trained models like BERT.
-  torch: The PyTorch library utilized by transformers.
-  arabic_reshaper: Used for processing Arabic text.
-  wordcloud: Used for visualizing word frequency.
-  
-# 2. Loading the Dataset
-## The dataset is loaded from a CSV file into a pandas DataFrame, where we can view the first few rows to understand its structure.
+## 2. Loading the Dataset
+- Load the dataset from a CSV file into a pandas DataFrame.
+- View the first few rows to understand its structure.
 
- ## Explanation:
-This step is crucial to ensure that the data is loaded correctly and to understand its components. This includes knowing the number of columns and the available data.
+## 3. Data Exploration
+- Explore the dataset to check for missing values and obtain summary statistics.
 
-# 3. Data Exploration
-  We explore the dataset further to understand its contents, including checking for missing values and obtaining summary statistics.
+## 4. Text Cleaning Function
+- Define a function to clean the text data by removing unnecessary content.
 
-Explanation:
-Checking for missing values and summary statistics provides important insights into the data, such as the balance of different classes and whether data cleaning is needed.
+## 5. Visual Analysis and Plotting
+- Create visualizations to illustrate data distribution and trends.
 
-4. Text Cleaning Function
-We define a function to clean the text data by removing signatures, confidentiality notices, and any specific patterns.
+## 6. Bilingual Text Processing
+- Prepare special processing for texts in both Arabic and English.
+- Remove stopwords.
 
-Explanation:
-Cleaning aims to remove unnecessary content that could affect text analysis, making the data more accurate and ready for modeling.
+## 7. Counting Missing Values Before and After Cleaning
+- Examine the number of missing values in original and cleaned text columns.
 
-5. Visual Analysis and Plotting
-Visualizations are created to illustrate the distribution of data, helping to understand patterns and trends in the dataset.
+## 8. Word Frequency Analysis
+- Perform word frequency analysis and visualize results with a word cloud.
 
-Explanation:
-Visualization helps to recognize prominent patterns and makes it easier to present findings to stakeholders in a visual manner.
+## 9. Feature Engineering
+- Create new features based on text length and word count.
 
-6. Bilingual Text Processing
-We prepare special processing for texts in both Arabic and English, including removing stopwords that do not add value to the analysis.
+## 10. Dimensionality Reduction using PCA
+- Apply PCA to reduce dimensions for better visualization and analysis.
 
-Explanation:
-Removing stopwords helps improve the model's performance by focusing the analysis on the most important words.
+## 11. Text Classification using Keywords
+- Define keywords to classify texts into different categories.
 
-7. Counting Missing Values Before and After Cleaning
-We examine the number of missing values in the original and cleaned text columns.
+## 12. Training and Evaluating the Random Forest Model
+- Prepare data for model training.
+- Evaluate performance using a confusion matrix and statistical reports.
 
-Explanation:
-Checking for missing values after cleaning ensures that the cleaning process was effective and that no important information was lost.
+## 13. Training the SVM Model
+- Implement the SVM model and evaluate performance.
 
-8. Word Frequency Analysis
-We perform word frequency analysis on the cleaned texts and use a word cloud to visualize the results.
+## 14. Visualizing PCA Results
+- Visualize PCA results to observe data distribution in reduced-dimensional space.
 
-Explanation:
-A word cloud allows us to see the most common words, helping to identify common issues or requests.
+## 15. Model Performance Summary
+- Summarize performance metrics of models for comparison.
 
-9. Feature Engineering
-New features are created based on text length and word count, providing additional context for the model.
+## 16. Conclusion and Future Work
+- Outline steps for processing, analyzing, and classifying ticket data.
+- Suggest future improvements.
 
-Explanation:
-The new features are useful for improving the model's performance by providing it with additional information about the nature of the requests.
+## 17. References
+- [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
+- [Pandas Documentation](https://pandas.pydata.org/docs/)
+- [Natural Language Toolkit (NLTK)](https://www.nltk.org/)
+- [Transformers Documentation](https://huggingface.co/docs/transformers/index)
+- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
+- [Seaborn Documentation](https://seaborn.pydata.org/)
 
-10. Dimensionality Reduction using PCA
-We apply PCA to reduce dimensions in the dataset, making it easier to visualize and analyze.
-
-Explanation:
-Dimensionality reduction helps simplify the data, allowing for better identification of patterns without losing essential information.
-
-11. Text Classification using Keywords
-We define keywords to classify texts into different categories, such as technical issues, service requests, and general inquiries.
-
-Explanation:
-This method helps in understanding the nature of requests and improving the efficiency of responses.
-
-12. Training and Evaluating the Random Forest Model
-We prepare the data for model training and evaluate its performance using a confusion matrix and statistical reports.
-
-Explanation:
-Using the Random Forest model is a popular choice for classification tasks due to its robustness and ability to handle different data types.
-
-13. Training the SVM Model
-We implement the SVM model and evaluate its performance using test data.
-
-Explanation:
-The SVM model is effective in high-dimensional spaces and is suitable for text classification tasks.
-
-14. Visualizing PCA Results
-We visualize PCA results to observe the distribution of data points in the reduced-dimensional space.
-
-Explanation:
-This visualization helps understand how different data points are distributed, allowing for clearer identification of categories.
-
-15. Model Performance Summary
-We summarize the performance metrics of the model to compare different classifiers.
-
-Explanation:
-This summary allows us to easily compare the performance of various models, aiding in making informed decisions about the most suitable model for deployment.
-
-16. Conclusion and Future Work
-This project outlines the necessary steps for processing, analyzing, and classifying ticket data using machine learning. Future work includes implementing more advanced models like Transformers, exploring hyperparameter tuning, and improving feature engineering processes.
-
-17. References
-Scikit-learn Documentation
-Pandas Documentation
-Natural Language Toolkit (NLTK)
-Transformers Documentation
-Matplotlib Documentation
-Seaborn Documentation
+</body>
+</html>
