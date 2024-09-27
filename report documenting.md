@@ -108,4 +108,4 @@
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
 - [Pandas Documentation](https://pandas.pydata.org/docs/)
 - [Natural Language Toolkit (NLTK)](https://www.nltk.org/)
-- [Transformers Documentation](https://huggingface.co/docs/
+- [Transformers Documentation](https://huggingface.co/docs/)
