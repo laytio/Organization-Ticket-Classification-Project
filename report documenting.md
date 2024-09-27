@@ -38,6 +38,8 @@
  [the data ](Book11.csv)
 
 - View the first few rows to understand its structure.
+- ![](DATA/datatail.jpg)
+
 
 ## 3. Data Exploration
 - Explore the dataset to check for missing values and obtain summary statistics.
