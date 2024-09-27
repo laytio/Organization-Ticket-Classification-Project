@@ -73,21 +73,29 @@
 
 ## 10. Dimensionality Reduction using PCA
 - Apply PCA to reduce dimensions for better visualization and analysis.
- ![](DATA/9.jpg) - ![](DATA/11.jpg)
+ ![](DATA/9.jpg) - ![](DATA/10.jpg) 
+
 
 
 ## 11. Text Classification using Keywords
 - Define keywords to classify texts into different categories.
+  ![](DATA/12.jpg)
+
 
 ## 12. Training and Evaluating the Random Forest Model
 - Prepare data for model training.
 - Evaluate performance using a confusion matrix and statistical reports.
 
-## 13. Training the SVM Model
+## 13. Training the SVM Model and RandomForest 
 - Implement the SVM model and evaluate performance.
+  ![](DATA/16.jpg)
+  ![](DATA/15.jpg)
 
 ## 14. Visualizing PCA Results
 - Visualize PCA results to observe data distribution in reduced-dimensional space.
+![](DATA/11.jpg)
+
+
 
 ## 15. Model Performance Summary
 - Summarize performance metrics of models for comparison.
