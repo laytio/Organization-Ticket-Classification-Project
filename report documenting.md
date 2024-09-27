@@ -99,6 +99,7 @@ This report outlines the implementation of a ticketing system project, focusing 
 - Suggest future improvements.
 
 ## 18. Overview of Git
+   ![](DATA/19.jpg)
 Git is a distributed version control system designed to manage code changes and facilitate collaboration among developers. Below are the main topics related to Git, along with detailed explanations.
 
 ### 1. What is Git?
