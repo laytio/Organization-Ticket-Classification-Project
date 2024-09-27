@@ -35,44 +35,46 @@
 
 ## 2. Loading the Dataset
 - Load the dataset from a CSV file into a pandas DataFrame.
- [the data ](Book11.csv)
+ ![](Book11.csv)
 
 - View the first few rows to understand its structure.
-- ![](DATA/datatail.jpg)
+  ![](DATA/datatail.jpg)
 
 
 ## 3. Data Exploration
 - Explore the dataset to check for missing values and obtain summary statistics.
-- ![](DATA/4.jpg)
+ ![](DATA/4.jpg)
 
 ## 4. Text Cleaning Function
 - Define a function to clean the text data by removing unnecessary content.
-- ![](DATA/6.jpg)
+  ![](DATA/6.jpg)
 
 ## 5. Visual Analysis and Plotting
 - Create visualizations to illustrate data distribution and trends.
-- 
+  
 
 ## 6. Bilingual Text Processing
 - Prepare special processing for texts in both Arabic and English.
 - Remove stopwords.
-- 
+  
 
 ## 7. Counting Missing Values Before and After Cleaning
 - Examine the number of missing values in original and cleaned text columns.
-- 
+  
 
 ## 8. Word Frequency Analysis
 - Perform word frequency analysis and visualize results with a word cloud.
-- ![](DATA/7.jpg)
+ ![](DATA/7.jpg)
 
 ## 9. Feature Engineering
 - Create new features based on text length and word count.
-- - ![](DATA/8.jpg)
+   ![](DATA/8.jpg)
 
 
 ## 10. Dimensionality Reduction using PCA
 - Apply PCA to reduce dimensions for better visualization and analysis.
+ ![](DATA/9.jpg) - ![](DATA/11.jpg)
+
 
 ## 11. Text Classification using Keywords
 - Define keywords to classify texts into different categories.
