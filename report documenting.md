@@ -21,6 +21,7 @@
 - [17. References](#17-references)
 
 ## 1. Installation of Required Libraries
+![](https://copyassignment.com/wp-content/uploads/2022/01/6c4b5480-62b9-4c00-a55b-7ddb3ef8c0f7-1.jpg)
 - Install necessary libraries for data handling, modeling, and visualization:
   - **pandas**
   - **scikit-learn**
