@@ -1,52 +1,131 @@
-# Ticketing System Text-Based Classifier
+# Ticketing System Project Implementation Report
 
-## 1. Introduction
-The objective of this project is to classify ticketing system data using a text-based machine learning classifier. The dataset is unlabeled, and the labels are derived from the "Request Detail" and "Notes" features. The dataset includes both English and Arabic content, making it a bilingual classification task.
 
-## 2. Preprocessing
 
-### 2.1 Data Cleaning
-- **Text Cleaning**: We removed unnecessary elements such as email signatures, disclaimers, punctuation, and stopwords (for both English and Arabic). The text was normalized and tokenized.
-- **Tokenization**: The text was split into individual words using `nltk`'s tokenization functions.
-- **Stopwords Removal**: English and Arabic stopwords were removed from the data.
 
-### 2.2 Exploratory Data Analysis (EDA)
-- **Word Frequency Analysis**: A word cloud was generated to visualize the most frequent terms in the "Request Detail" feature.
-- **Distribution of Text Lengths**: The distribution of text lengths in the "Request Detail" field was analyzed.
-- **Correlation Matrix**: A correlation matrix was visualized to show relationships between text features like length and word count.
+## Table of Contents
+  Installation of Required Libraries
+  Loading the Dataset
+  Data Exploration
+  Text Cleaning Function
+  Visual Analysis and Plotting
+  Bilingual Text Processing
+  Counting Missing Values Before and After Cleaning
+  Word Frequency Analysis
+  Feature Engineering
+  Dimensionality Reduction using PCA
+  Text Classification using Keywords
+  Training and Evaluating the Random Forest Model
+  Training the SVM Model
+  Visualizing PCA Results
+  Model Performance Summary
+  Conclusion and Future Work
+  References
 
-## 3. Feature Engineering
-- **New Features**: We created new features such as text length, word count, and presence of technical issue keywords.
-- **Dimensionality Reduction**: We applied PCA to reduce the dimensionality of the numeric features.
+  
+# 1. Installation of Required Libraries
+## First, we need to install the necessary libraries for data handling, modeling, and visualization. These libraries include:
 
-## 4. Label Extraction
-Two types of labels were derived from the text using keyword-based classification:
-- **Technical Issue**: Extracted based on the presence of keywords like "error," "fail," etc.
-- **Service Request**: Extracted from keywords like "request," "service," etc.
+  pandas: Used for data manipulation and analysis.
+  scikit-learn: Used for implementing machine learning algorithms.
+  matplotlib and seaborn: Used for graphical visualization.
+  nltk: A library for natural language processing.
+  transformers: Used for leveraging pre-trained models like BERT.
+  torch: The PyTorch library utilized by transformers.
+  arabic_reshaper: Used for processing Arabic text.
+  wordcloud: Used for visualizing word frequency.
+  
+# 2. Loading the Dataset
+## The dataset is loaded from a CSV file into a pandas DataFrame, where we can view the first few rows to understand its structure.
 
-## 5. Modeling
+ ## Explanation:
+This step is crucial to ensure that the data is loaded correctly and to understand its components. This includes knowing the number of columns and the available data.
 
-### 5.1 Classifiers Used
-Three classifiers were trained and evaluated:
-1. **Random Forest**: A robust classifier for text features.
-2. **SVM**: A support vector machine with a linear kernel.
-3. **Transformers**: A BERT-based model for sequence classification.
+# 3. Data Exploration
+  We explore the dataset further to understand its contents, including checking for missing values and obtaining summary statistics.
 
-### 5.2 Model Tuning
-Hyperparameters were tuned for each classifier to achieve the best performance.
+Explanation:
+Checking for missing values and summary statistics provides important insights into the data, such as the balance of different classes and whether data cleaning is needed.
 
-## 6. Evaluation
-We evaluated the models using three key metrics:
-- **Accuracy**: Proportion of correct predictions.
-- **Precision**: Measure of exactness.
-- **Recall**: Measure of completeness.
+4. Text Cleaning Function
+We define a function to clean the text data by removing signatures, confidentiality notices, and any specific patterns.
 
-Based on the results, the Random Forest model performed the best, achieving the highest accuracy and recall.
+Explanation:
+Cleaning aims to remove unnecessary content that could affect text analysis, making the data more accurate and ready for modeling.
 
-## 7. Conclusion
-This project involved building a bilingual text classifier using both traditional and modern NLP techniques. The results show that a Random Forest model with TF-IDF features is effective for this task.
+5. Visual Analysis and Plotting
+Visualizations are created to illustrate the distribution of data, helping to understand patterns and trends in the dataset.
 
-## 8. Future Work
-- Explore more advanced transformers for better accuracy.
-- Experiment with stacking classifiers to further improve performance.
+Explanation:
+Visualization helps to recognize prominent patterns and makes it easier to present findings to stakeholders in a visual manner.
 
+6. Bilingual Text Processing
+We prepare special processing for texts in both Arabic and English, including removing stopwords that do not add value to the analysis.
+
+Explanation:
+Removing stopwords helps improve the model's performance by focusing the analysis on the most important words.
+
+7. Counting Missing Values Before and After Cleaning
+We examine the number of missing values in the original and cleaned text columns.
+
+Explanation:
+Checking for missing values after cleaning ensures that the cleaning process was effective and that no important information was lost.
+
+8. Word Frequency Analysis
+We perform word frequency analysis on the cleaned texts and use a word cloud to visualize the results.
+
+Explanation:
+A word cloud allows us to see the most common words, helping to identify common issues or requests.
+
+9. Feature Engineering
+New features are created based on text length and word count, providing additional context for the model.
+
+Explanation:
+The new features are useful for improving the model's performance by providing it with additional information about the nature of the requests.
+
+10. Dimensionality Reduction using PCA
+We apply PCA to reduce dimensions in the dataset, making it easier to visualize and analyze.
+
+Explanation:
+Dimensionality reduction helps simplify the data, allowing for better identification of patterns without losing essential information.
+
+11. Text Classification using Keywords
+We define keywords to classify texts into different categories, such as technical issues, service requests, and general inquiries.
+
+Explanation:
+This method helps in understanding the nature of requests and improving the efficiency of responses.
+
+12. Training and Evaluating the Random Forest Model
+We prepare the data for model training and evaluate its performance using a confusion matrix and statistical reports.
+
+Explanation:
+Using the Random Forest model is a popular choice for classification tasks due to its robustness and ability to handle different data types.
+
+13. Training the SVM Model
+We implement the SVM model and evaluate its performance using test data.
+
+Explanation:
+The SVM model is effective in high-dimensional spaces and is suitable for text classification tasks.
+
+14. Visualizing PCA Results
+We visualize PCA results to observe the distribution of data points in the reduced-dimensional space.
+
+Explanation:
+This visualization helps understand how different data points are distributed, allowing for clearer identification of categories.
+
+15. Model Performance Summary
+We summarize the performance metrics of the model to compare different classifiers.
+
+Explanation:
+This summary allows us to easily compare the performance of various models, aiding in making informed decisions about the most suitable model for deployment.
+
+16. Conclusion and Future Work
+This project outlines the necessary steps for processing, analyzing, and classifying ticket data using machine learning. Future work includes implementing more advanced models like Transformers, exploring hyperparameter tuning, and improving feature engineering processes.
+
+17. References
+Scikit-learn Documentation
+Pandas Documentation
+Natural Language Toolkit (NLTK)
+Transformers Documentation
+Matplotlib Documentation
+Seaborn Documentation
