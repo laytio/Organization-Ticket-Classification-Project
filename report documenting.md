@@ -1,48 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        color: #333333; /* Dark gray text */
-        background-color: #f8f8f8; /* Light gray background */
-    }
-    h1 {
-        color: #2c3e50; /* Dark blue */
-    }
-    h2 {
-        color: #2980b9; /* Bright blue */
-    }
-    ul {
-        color: #333333; /* Dark gray for lists */
-    }
-    li {
-        margin-bottom: 5px; /* Space between list items */
-    }
-</style>
-</head>
-<body>
-
 # Ticketing System Project Implementation Report
 
 ## Table of Contents
-- [Installation of Required Libraries](#installation-of-required-libraries)
-- [Loading the Dataset](#loading-the-dataset)
-- [Data Exploration](#data-exploration)
-- [Text Cleaning Function](#text-cleaning-function)
-- [Visual Analysis and Plotting](#visual-analysis-and-plotting)
-- [Bilingual Text Processing](#bilingual-text-processing)
-- [Counting Missing Values Before and After Cleaning](#counting-missing-values-before-and-after-cleaning)
-- [Word Frequency Analysis](#word-frequency-analysis)
-- [Feature Engineering](#feature-engineering)
-- [Dimensionality Reduction using PCA](#dimensionality-reduction-using-pca)
-- [Text Classification using Keywords](#text-classification-using-keywords)
-- [Training and Evaluating the Random Forest Model](#training-and-evaluating-the-random-forest-model)
-- [Training the SVM Model](#training-the-svm-model)
-- [Visualizing PCA Results](#visualizing-pca-results)
-- [Model Performance Summary](#model-performance-summary)
-- [Conclusion and Future Work](#conclusion-and-future-work)
-- [References](#references)
+- [1. Installation of Required Libraries](#1-installation-of-required-libraries)
+- [2. Loading the Dataset](#2-loading-the-dataset)
+- [3. Data Exploration](#3-data-exploration)
+- [4. Text Cleaning Function](#4-text-cleaning-function)
+- [5. Visual Analysis and Plotting](#5-visual-analysis-and-plotting)
+- [6. Bilingual Text Processing](#6-bilingual-text-processing)
+- [7. Counting Missing Values Before and After Cleaning](#7-counting-missing-values-before-and-after-cleaning)
+- [8. Word Frequency Analysis](#8-word-frequency-analysis)
+- [9. Feature Engineering](#9-feature-engineering)
+- [10. Dimensionality Reduction using PCA](#10-dimensionality-reduction-using-pca)
+- [11. Text Classification using Keywords](#11-text-classification-using-keywords)
+- [12. Training and Evaluating the Random Forest Model](#12-training-and-evaluating-the-random-forest-model)
+- [13. Training the SVM Model](#13-training-the-svm-model)
+- [14. Visualizing PCA Results](#14-visualizing-pca-results)
+- [15. Model Performance Summary](#15-model-performance-summary)
+- [16. Conclusion and Future Work](#16-conclusion-and-future-work)
+- [17. References](#17-references)
 
 ## 1. Installation of Required Libraries
 - Install necessary libraries for data handling, modeling, and visualization:
@@ -109,9 +84,4 @@
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
 - [Pandas Documentation](https://pandas.pydata.org/docs/)
 - [Natural Language Toolkit (NLTK)](https://www.nltk.org/)
-- [Transformers Documentation](https://huggingface.co/docs/transformers/index)
-- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
-- [Seaborn Documentation](https://seaborn.pydata.org/)
-
-</body>
-</html>
+- [Transformers Documentation](https://huggingface.co/docs/
