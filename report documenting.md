@@ -33,6 +33,8 @@
 
 ## 2. Loading the Dataset
 - Load the dataset from a CSV file into a pandas DataFrame.
+ [the data ](Book11.csv)
+
 - View the first few rows to understand its structure.
 
 ## 3. Data Exploration
