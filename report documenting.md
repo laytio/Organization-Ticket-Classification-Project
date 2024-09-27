@@ -79,7 +79,7 @@
 
 ## 11. Text Classification using Keywords
 - Define keywords to classify texts into different categories.
-  ![](DATA/12.jpg)
+         - ![](DATA/12.jpg)
 
 
 ## 12. Training and Evaluating the Random Forest Model
