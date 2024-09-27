@@ -1,4 +1,5 @@
 # Ticketing System Project Implementation Report
+![](https://www.itarian.com/images/enterprise-ticketing-systems.png)
 
 ## Table of Contents
 - [1. Installation of Required Libraries](#1-installation-of-required-libraries)
